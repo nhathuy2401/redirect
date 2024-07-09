@@ -12,7 +12,7 @@ const RedirectComponent = () => {
 
   return (
     <div>
-      <p>You will be redirected to Google in 3 seconds...</p>
+     
     </div>
   );
 };
